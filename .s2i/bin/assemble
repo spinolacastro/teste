@@ -2,6 +2,6 @@
 
 source ${STI_SCRIPTS_PATH}/assemble
 
-curl https://download.newrelic.com/php_agent/release/newrelic-php5-6.4.0.163-linux.tar.gz | tar zxf
+curl https://download.newrelic.com/php_agent/release/newrelic-php5-6.4.0.163-linux.tar.gz | tar xz
 
 NR_INSTALL_SILENT=1 ./newrelic-install install
