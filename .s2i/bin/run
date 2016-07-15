@@ -1,0 +1,8 @@
+#!/bin/bash
+echo start run -----------------------
+
+if [ -x ${STI_SCRIPTS_PATH}/run ]; then
+    source ${STI_SCRIPTS_PATH}/run $@
+fi
+
+echo end run -----------------------
