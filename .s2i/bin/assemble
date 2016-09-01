@@ -1,6 +1,4 @@
 #!/bin/bash -x
-source ${STI_SCRIPTS_PATH}/assemble
-
 
 STUNNEL_VER=5.35
 
@@ -17,3 +15,5 @@ if [ ! -d /tmp/stunnel-${STUNNEL_VER} ]; then
 fi
 
 mv /tmp/src/stunnel.conf /tmp/
+
+source ${STI_SCRIPTS_PATH}/assemble
