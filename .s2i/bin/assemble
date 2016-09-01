@@ -1,3 +1,19 @@
 #!/bin/bash -x
-
 source ${STI_SCRIPTS_PATH}/assemble
+
+
+STUNNEL_VER=5.35
+
+if [ ! -d /tmp/stunnel ]; then
+    mkdir /tmp/stunnel && cd /tmp/stunnel
+
+    curl -O https://www.stunnel.org/downloads/stunnel-${STUNNEL_VER}.tar.gz
+
+    tar zxf stunnel-{STUNNEL_VER}.tar.gz && cd stunnel-{STUNNEL_VER}
+
+    ./configure && make
+
+    cp src/stunnel /tmp/
+fi
+
+mv /tmp/src/stunnel.conf /tmp/
