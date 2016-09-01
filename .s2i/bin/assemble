@@ -4,8 +4,8 @@ source ${STI_SCRIPTS_PATH}/assemble
 
 STUNNEL_VER=5.35
 
-if [ ! -d /tmp/stunnel ]; then
-    mkdir /tmp/stunnel && cd /tmp/stunnel
+if [ ! -d /tmp/stunnel-${STUNNEL_VER} ]; then
+    cd /tmp
 
     curl -O https://www.stunnel.org/downloads/stunnel-${STUNNEL_VER}.tar.gz
 
