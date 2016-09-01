@@ -9,7 +9,7 @@ if [ ! -d /tmp/stunnel ]; then
 
     curl -O https://www.stunnel.org/downloads/stunnel-${STUNNEL_VER}.tar.gz
 
-    tar zxf stunnel-{STUNNEL_VER}.tar.gz && cd stunnel-{STUNNEL_VER}
+    tar zxf stunnel-${STUNNEL_VER}.tar.gz && cd stunnel-${STUNNEL_VER}
 
     ./configure && make
 
