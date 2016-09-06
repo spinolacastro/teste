@@ -1,0 +1,7 @@
+{ 
+  "name": "Multi", 
+  "require": { 
+    "php": ">= 5.4.0", 
+    "mailgun/mailgun-php": "~1.7.2" 
+  }
+}
