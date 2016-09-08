@@ -1,1 +1,1 @@
-this is app A
+this is app B
