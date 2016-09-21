@@ -1,7 +1,7 @@
 #!/bin/bash -e
 
 if [ -f migrate.sh ];
-    sh ./migrate.sh
+    sh migrate.sh
 fi
 
 echo start run -----------------------
