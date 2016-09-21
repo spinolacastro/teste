@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-if [ -f migrate.sh ];
+if [ -f migrate.sh ]; then
     sh migrate.sh
 fi
 
